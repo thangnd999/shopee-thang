@@ -1,0 +1,117 @@
+/* mobile and tablet */
+@media(max-width:1023px) {
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        height: 75px;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        right: 0;
+    }
+    .app__container{
+        margin-top: 86px;
+    }
+    .header__sort-bar{
+        display:flex ;
+    }
+}
+/*  tablet */
+@media(min-width: 740px ) and (max-width:1023px) {
+    .hide-on-tablet{
+        display: none;
+    }
+    .header__cart {
+        width: 80px;
+        text-align: right;
+        cursor: default;
+}  
+.header__cart-list{
+    top: calc(100% + 23px);
+    width: 628px
+}
+}
+/* mobile*/
+@media(max-width: 739px) {
+    .hide-on-mobile{
+        display: none  ;
+    }
+    .header__cart {
+        width: 54px;
+        text-align: right;
+        cursor: default;
+    }  
+    .header{
+        padding: 0 30px;
+    }
+    .header-with-search{
+        justify-content: space-between;
+        cursor: default;
+        padding: 0 -20px;
+    }
+    .header__logo{
+        width: 142px; ;
+    }
+    .header__mobile-search{
+        display: block;
+    }
+    .header__search{
+        padding: 0 12px;
+        top: 74px;
+        left: 0;
+        right: 0;
+        height: 45px;
+        position: fixed;
+        border: 1px solid #f5f5f5;
+        animation: mobileSearchSideIn linear 0.3s ;
+        display: none;
+    }
+
+    .pagination-item__link{
+        --height: 28px;
+        font-size: 1.6rem;
+        min-width: 36px;
+    }
+    .pagination-item{
+        margin: 0;
+    }
+    .footer__content{
+        padding: 0 16px;
+    }
+    .footer__heading{
+        text-align: center;
+    }
+    .footer-item__link{
+        justify-content: center;
+    }
+
+
+
+    /* bam tim thi no di chuyen xuong ne */
+    @keyframes  mobileSearchSideIn{
+        from{
+            opacity: 0;
+            top: 35px ;
+        }
+        to{
+            opacity: 1;
+            top : 74px;
+        }
+       
+    }
+    .header__search-checkbox:checked:checked ~ .header__search{
+        display: flex;
+    }
+    .header__search-checkbox{
+        display: block;
+        
+    }
+    .app__content{
+        margin: 0 4px;
+    }
+    .footer__download{
+        justify-content: center;
+    }
+}
